@@ -8,3 +8,6 @@ teste.py pega os TIC IDs do csv e salva a curva de luz em .FITS;
 Semana 2 - curvas de luz em .FITS;
 
 LCs_positivos.py e LCs_negativos.py leem os respectivos csvs e baixam a curva de luz para cada TIC ID do csv.
+sort.py deixa os dados baixados na estrutura de train, validation e test. Faltou o infer porque ainda nao baixei os dados .fits para os candidatos/novas curvas de luz.
+
+dataset.py - alterado conforme tutorial 2 do QUSI.
