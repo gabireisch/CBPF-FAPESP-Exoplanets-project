@@ -53,10 +53,10 @@ for tic in tic_ids:
                 print("Light curve incompatível ignorada")
 
         # junta setores
-        lc = lcc.stitch()
+        lc = LightCurveCollection(valid_lcs).stitch()
         # caminho do arquivo
         filename = f"TIC_{tic}.fits"
-        path = os.path.join("train/negatives",filename)
+        path = os.path.join("dados/train/negatives",filename)
 
         # salva
         lc.to_fits(path)
