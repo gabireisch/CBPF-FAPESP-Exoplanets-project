@@ -1,0 +1,24 @@
+{
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "CPython 3.11.15",
+  "startedAt": "2026-05-21T03:24:46.364010Z",
+  "program": "C:\\Users\\gabir\\Documents\\cbpf\\CBPF-FAPESP-Exoplanets-project\\train.py",
+  "codePath": "train.py",
+  "codePathLocal": "train.py",
+  "email": "g.reisch@aluno.ufabc.edu.br",
+  "root": "sessions",
+  "host": "gabriela",
+  "executable": "C:\\Users\\gabir\\miniconda3\\envs\\qusi\\python.exe",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "508731322368",
+      "used": "188748529664"
+    }
+  },
+  "memory": {
+    "total": "16905961472"
+  },
+  "writerId": "ll3vk1yi3sw8ko25q66pz4kckudqmsn6"
+}

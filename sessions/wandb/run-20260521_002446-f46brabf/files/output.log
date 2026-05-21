@@ -1,0 +1,49 @@
+{}
+C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py:424: UserWarning: This DataLoader will create 10 worker processes in total. Our suggested max number of worker in current system is 8 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+qusi [2026-05-21 00:24:50,299 INFO qusi.internal.train_session] Cycle 0
+C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py:430: UserWarning: This DataLoader will create 10 worker processes in total. Our suggested max number of worker in current system is 8 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py:1095: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Traceback (most recent call last):
+  File "C:\Users\gabir\Documents\cbpf\CBPF-FAPESP-Exoplanets-project\train.py", line 17, in <module>
+    main()
+  File "C:\Users\gabir\Documents\cbpf\CBPF-FAPESP-Exoplanets-project\train.py", line 12, in main
+    train_session(train_datasets=[train_light_curve_dataset], validation_datasets=[validation_light_curve_dataset],
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\train_session.py", line 145, in train_session
+    train_phase(dataloader=train_dataloader, model=model, loss_metric=train_loss_metric,
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\train_session.py", line 176, in train_phase
+    predicted_targets = model(input_features_on_device)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\nn\modules\module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\nn\modules\module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\hadryss_model.py", line 112, in forward
+    x = x.reshape([-1, 1, self.input_length])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: shape '[-1, 1, 3500]' is invalid for input of size 200000
+qusi [2026-05-21 00:25:34,672 CRITICAL qusi] Uncaught exception at 2026-05-21 00:25:34.672187-03:00:
+Traceback (most recent call last):
+  File "C:\Users\gabir\Documents\cbpf\CBPF-FAPESP-Exoplanets-project\train.py", line 17, in <module>
+    main()
+  File "C:\Users\gabir\Documents\cbpf\CBPF-FAPESP-Exoplanets-project\train.py", line 12, in main
+    train_session(train_datasets=[train_light_curve_dataset], validation_datasets=[validation_light_curve_dataset],
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\train_session.py", line 145, in train_session
+    train_phase(dataloader=train_dataloader, model=model, loss_metric=train_loss_metric,
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\train_session.py", line 176, in train_phase
+    predicted_targets = model(input_features_on_device)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\nn\modules\module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\nn\modules\module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\hadryss_model.py", line 112, in forward
+    x = x.reshape([-1, 1, self.input_length])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: shape '[-1, 1, 3500]' is invalid for input of size 200000

@@ -1,0 +1,43 @@
+_wandb:
+    value:
+        cli_version: 0.27.0
+        e:
+            tnqbjeuao05xnfp6nlvxtebuqeio1se3:
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "508731322368"
+                        used: "188524093440"
+                email: g.reisch@aluno.ufabc.edu.br
+                executable: C:\Users\gabir\miniconda3\envs\qusi\python.exe
+                host: gabriela
+                memory:
+                    total: "16905961472"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\gabir\Documents\cbpf\CBPF-FAPESP-Exoplanets-project\train.py
+                python: CPython 3.11.15
+                root: sessions
+                startedAt: "2026-05-21T03:02:25.637029Z"
+                writerId: tnqbjeuao05xnfp6nlvxtebuqeio1se3
+        m: []
+        python_version: 3.11.15
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 53
+            "2":
+                - 1
+                - 5
+                - 41
+                - 53
+            "4": 3.11.15
+            "5": 0.27.0
+            "8":
+                - 3
+            "12": 0.27.0
+            "13": windows-amd64

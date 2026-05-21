@@ -1,0 +1,140 @@
+{}
+C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py:424: UserWarning: This DataLoader will create 10 worker processes in total. Our suggested max number of worker in current system is 8 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+qusi [2026-05-21 00:02:37,898 INFO qusi.internal.train_session] Cycle 0
+C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py:430: UserWarning: This DataLoader will create 10 worker processes in total. Our suggested max number of worker in current system is 8 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py:1095: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Traceback (most recent call last):
+  File "C:\Users\gabir\Documents\cbpf\CBPF-FAPESP-Exoplanets-project\train.py", line 17, in <module>
+    main()
+  File "C:\Users\gabir\Documents\cbpf\CBPF-FAPESP-Exoplanets-project\train.py", line 12, in main
+    train_session(train_datasets=[train_light_curve_dataset], validation_datasets=[validation_light_curve_dataset],
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\train_session.py", line 145, in train_session
+    train_phase(dataloader=train_dataloader, model=model, loss_metric=train_loss_metric,
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\train_session.py", line 168, in train_phase
+    for batch_index, (input_features, targets) in enumerate(dataloader):
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py", line 718, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py", line 1525, in _next_data
+    return self._process_data(data, worker_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py", line 1563, in _process_data
+    data.reraise()
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\_utils.py", line 774, in reraise
+    raise exception
+KeyError: Caught KeyError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\astropy\io\fits\column.py", line 2150, in _get_index
+    return names.index(key.rstrip())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'SAP_FLUX' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\_utils\worker.py", line 374, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 35, in fetch
+    data.append(next(self.dataset_iter))
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\light_curve_dataset.py", line 272, in interleave_infinite_iterators
+    yield next(iterator)
+          ^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\light_curve_dataset.py", line 139, in __iter__
+    standard_light_curve = observation_from_path_function(standard_path)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\light_curve_collection.py", line 278, in observation_from_path
+    times, fluxes = self.light_curve_collection.load_times_and_fluxes_from_path(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\light_curve_collection.py", line 175, in load_times_and_fluxes_from_path
+    return self.load_times_and_fluxes_from_path_function(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\Documents\cbpf\CBPF-FAPESP-Exoplanets-project\dataset.py", line 28, in load_times_and_fluxes_from_path
+    light_curve = TessMissionLightCurve.from_path(path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\ramjet\photometric_database\tess_two_minute_cadence_light_curve.py", line 75, in from_path
+    column = light_curve_table[fits_index.value]
+             ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\astropy\io\fits\fitsrec.py", line 531, in __getitem__
+    return self.field(key)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\astropy\io\fits\fitsrec.py", line 718, in field
+    column = self.columns[key]
+             ~~~~~~~~~~~~^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\astropy\io\fits\column.py", line 1755, in __getitem__
+    key = _get_index(self.names, key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\astropy\io\fits\column.py", line 2158, in _get_index
+    raise KeyError(f"Key '{key}' does not exist.")
+KeyError: "Key 'SAP_FLUX' does not exist."
+qusi [2026-05-21 00:02:58,202 CRITICAL qusi] Uncaught exception at 2026-05-21 00:02:58.202741-03:00:
+
+Traceback (most recent call last):
+  File "C:\Users\gabir\Documents\cbpf\CBPF-FAPESP-Exoplanets-project\train.py", line 17, in <module>
+    main()
+  File "C:\Users\gabir\Documents\cbpf\CBPF-FAPESP-Exoplanets-project\train.py", line 12, in main
+    train_session(train_datasets=[train_light_curve_dataset], validation_datasets=[validation_light_curve_dataset],
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\train_session.py", line 145, in train_session
+    train_phase(dataloader=train_dataloader, model=model, loss_metric=train_loss_metric,
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\train_session.py", line 168, in train_phase
+    for batch_index, (input_features, targets) in enumerate(dataloader):
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py", line 718, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py", line 1525, in _next_data
+    return self._process_data(data, worker_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py", line 1563, in _process_data
+    data.reraise()
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\_utils.py", line 774, in reraise
+    raise exception
+KeyError: Caught KeyError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\astropy\io\fits\column.py", line 2150, in _get_index
+    return names.index(key.rstrip())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: 'SAP_FLUX' is not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\_utils\worker.py", line 374, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 35, in fetch
+    data.append(next(self.dataset_iter))
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\light_curve_dataset.py", line 272, in interleave_infinite_iterators
+    yield next(iterator)
+          ^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\light_curve_dataset.py", line 139, in __iter__
+    standard_light_curve = observation_from_path_function(standard_path)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\light_curve_collection.py", line 278, in observation_from_path
+    times, fluxes = self.light_curve_collection.load_times_and_fluxes_from_path(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\qusi\internal\light_curve_collection.py", line 175, in load_times_and_fluxes_from_path
+    return self.load_times_and_fluxes_from_path_function(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\Documents\cbpf\CBPF-FAPESP-Exoplanets-project\dataset.py", line 28, in load_times_and_fluxes_from_path
+    light_curve = TessMissionLightCurve.from_path(path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\ramjet\photometric_database\tess_two_minute_cadence_light_curve.py", line 75, in from_path
+    column = light_curve_table[fits_index.value]
+             ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\astropy\io\fits\fitsrec.py", line 531, in __getitem__
+    return self.field(key)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\astropy\io\fits\fitsrec.py", line 718, in field
+    column = self.columns[key]
+             ~~~~~~~~~~~~^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\astropy\io\fits\column.py", line 1755, in __getitem__
+    key = _get_index(self.names, key)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\astropy\io\fits\column.py", line 2158, in _get_index
+    raise KeyError(f"Key '{key}' does not exist.")
+KeyError: "Key 'SAP_FLUX' does not exist."

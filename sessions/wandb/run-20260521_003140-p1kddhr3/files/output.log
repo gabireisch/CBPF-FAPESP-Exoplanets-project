@@ -1,0 +1,286 @@
+{}
+C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py:424: UserWarning: This DataLoader will create 10 worker processes in total. Our suggested max number of worker in current system is 8 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+qusi [2026-05-21 00:31:44,157 INFO qusi.internal.train_session] Cycle 0
+C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py:430: UserWarning: This DataLoader will create 10 worker processes in total. Our suggested max number of worker in current system is 8 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  self.check_worker_number_rationality()
+C:\Users\gabir\miniconda3\envs\qusi\Lib\site-packages\torch\utils\data\dataloader.py:1095: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+qusi [2026-05-21 00:32:37,096 INFO qusi.internal.train_session] loss: 0.699075  [  100/10000]
+qusi [2026-05-21 00:33:21,906 INFO qusi.internal.train_session] loss: 0.690870  [ 1100/10000]
+qusi [2026-05-21 00:33:31,503 INFO qusi.internal.train_session] loss: 0.660327  [ 2100/10000]
+qusi [2026-05-21 00:34:10,229 INFO qusi.internal.train_session] loss: 0.604052  [ 3100/10000]
+qusi [2026-05-21 00:34:51,815 INFO qusi.internal.train_session] loss: 0.547746  [ 4100/10000]
+qusi [2026-05-21 00:35:35,368 INFO qusi.internal.train_session] loss: 0.508441  [ 5100/10000]
+qusi [2026-05-21 00:36:37,686 INFO qusi.internal.train_session] loss: 0.498300  [ 6100/10000]
+qusi [2026-05-21 00:36:49,660 INFO qusi.internal.train_session] loss: 0.432152  [ 7100/10000]
+qusi [2026-05-21 00:37:26,994 INFO qusi.internal.train_session] loss: 0.422418  [ 8100/10000]
+qusi [2026-05-21 00:38:15,576 INFO qusi.internal.train_session] loss: 0.353670  [ 9100/10000]
+qusi [2026-05-21 00:43:46,468 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.498775
+
+qusi [2026-05-21 00:43:46,871 INFO qusi.internal.train_session] Cycle 1
+qusi [2026-05-21 00:49:26,947 INFO qusi.internal.train_session] loss: 0.319725  [  100/10000]
+qusi [2026-05-21 00:53:50,374 INFO qusi.internal.train_session] loss: 0.458437  [ 1100/10000]
+qusi [2026-05-21 00:55:44,825 INFO qusi.internal.train_session] loss: 0.442548  [ 2100/10000]
+qusi [2026-05-21 00:56:54,424 INFO qusi.internal.train_session] loss: 0.342766  [ 3100/10000]
+qusi [2026-05-21 00:58:13,337 INFO qusi.internal.train_session] loss: 0.383811  [ 4100/10000]
+qusi [2026-05-21 00:59:17,138 INFO qusi.internal.train_session] loss: 0.261047  [ 5100/10000]
+qusi [2026-05-21 01:00:35,754 INFO qusi.internal.train_session] loss: 0.441834  [ 6100/10000]
+qusi [2026-05-21 01:01:25,370 INFO qusi.internal.train_session] loss: 0.455807  [ 7100/10000]
+qusi [2026-05-21 01:02:09,369 INFO qusi.internal.train_session] loss: 0.342037  [ 8100/10000]
+qusi [2026-05-21 01:02:53,306 INFO qusi.internal.train_session] loss: 0.229663  [ 9100/10000]
+qusi [2026-05-21 01:04:47,006 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.537866
+
+qusi [2026-05-21 01:04:47,061 INFO qusi.internal.train_session] Cycle 2
+qusi [2026-05-21 01:05:57,669 INFO qusi.internal.train_session] loss: 0.326939  [  100/10000]
+qusi [2026-05-21 01:10:11,719 INFO qusi.internal.train_session] loss: 0.346861  [ 1100/10000]
+qusi [2026-05-21 01:14:31,700 INFO qusi.internal.train_session] loss: 0.387825  [ 2100/10000]
+qusi [2026-05-21 01:17:40,138 INFO qusi.internal.train_session] loss: 0.307233  [ 3100/10000]
+qusi [2026-05-21 01:18:31,957 INFO qusi.internal.train_session] loss: 0.314060  [ 4100/10000]
+qusi [2026-05-21 01:19:18,940 INFO qusi.internal.train_session] loss: 0.317522  [ 5100/10000]
+qusi [2026-05-21 01:20:00,628 INFO qusi.internal.train_session] loss: 0.314616  [ 6100/10000]
+qusi [2026-05-21 01:20:31,250 INFO qusi.internal.train_session] loss: 0.318925  [ 7100/10000]
+qusi [2026-05-21 01:20:40,283 INFO qusi.internal.train_session] loss: 0.304520  [ 8100/10000]
+qusi [2026-05-21 01:21:22,920 INFO qusi.internal.train_session] loss: 0.277925  [ 9100/10000]
+qusi [2026-05-21 01:24:09,031 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.378722
+
+qusi [2026-05-21 01:24:09,087 INFO qusi.internal.train_session] Cycle 3
+qusi [2026-05-21 01:25:16,020 INFO qusi.internal.train_session] loss: 0.280518  [  100/10000]
+qusi [2026-05-21 01:29:37,838 INFO qusi.internal.train_session] loss: 0.301122  [ 1100/10000]
+qusi [2026-05-21 01:33:50,176 INFO qusi.internal.train_session] loss: 0.270568  [ 2100/10000]
+qusi [2026-05-21 01:37:00,745 INFO qusi.internal.train_session] loss: 0.234567  [ 3100/10000]
+qusi [2026-05-21 01:37:55,254 INFO qusi.internal.train_session] loss: 0.313321  [ 4100/10000]
+qusi [2026-05-21 01:38:38,695 INFO qusi.internal.train_session] loss: 0.190325  [ 5100/10000]
+qusi [2026-05-21 01:39:19,582 INFO qusi.internal.train_session] loss: 0.225891  [ 6100/10000]
+qusi [2026-05-21 01:39:59,041 INFO qusi.internal.train_session] loss: 0.244816  [ 7100/10000]
+qusi [2026-05-21 01:40:37,380 INFO qusi.internal.train_session] loss: 0.229379  [ 8100/10000]
+qusi [2026-05-21 01:41:14,794 INFO qusi.internal.train_session] loss: 0.172417  [ 9100/10000]
+qusi [2026-05-21 01:43:05,627 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.611145
+
+qusi [2026-05-21 01:43:05,683 INFO qusi.internal.train_session] Cycle 4
+qusi [2026-05-21 01:44:46,026 INFO qusi.internal.train_session] loss: 0.188053  [  100/10000]
+qusi [2026-05-21 01:49:06,514 INFO qusi.internal.train_session] loss: 0.228229  [ 1100/10000]
+qusi [2026-05-21 01:53:14,204 INFO qusi.internal.train_session] loss: 0.240799  [ 2100/10000]
+qusi [2026-05-21 01:53:36,577 INFO qusi.internal.train_session] loss: 0.205530  [ 3100/10000]
+qusi [2026-05-21 01:53:58,442 INFO qusi.internal.train_session] loss: 0.244002  [ 4100/10000]
+qusi [2026-05-21 01:54:20,598 INFO qusi.internal.train_session] loss: 0.158497  [ 5100/10000]
+qusi [2026-05-21 01:54:59,154 INFO qusi.internal.train_session] loss: 0.220932  [ 6100/10000]
+qusi [2026-05-21 01:57:33,477 INFO qusi.internal.train_session] loss: 0.235764  [ 7100/10000]
+qusi [2026-05-21 01:58:29,636 INFO qusi.internal.train_session] loss: 0.113335  [ 8100/10000]
+qusi [2026-05-21 01:59:15,149 INFO qusi.internal.train_session] loss: 0.145526  [ 9100/10000]
+qusi [2026-05-21 02:01:33,881 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.079863
+
+qusi [2026-05-21 02:01:33,961 INFO qusi.internal.train_session] Cycle 5
+qusi [2026-05-21 02:04:19,060 INFO qusi.internal.train_session] loss: 0.125695  [  100/10000]
+qusi [2026-05-21 02:09:10,293 INFO qusi.internal.train_session] loss: 0.149997  [ 1100/10000]
+qusi [2026-05-21 02:12:57,702 INFO qusi.internal.train_session] loss: 0.191211  [ 2100/10000]
+qusi [2026-05-21 02:14:22,190 INFO qusi.internal.train_session] loss: 0.156983  [ 3100/10000]
+qusi [2026-05-21 02:15:14,903 INFO qusi.internal.train_session] loss: 0.128982  [ 4100/10000]
+qusi [2026-05-21 02:15:58,719 INFO qusi.internal.train_session] loss: 0.151566  [ 5100/10000]
+qusi [2026-05-21 02:16:42,794 INFO qusi.internal.train_session] loss: 0.098319  [ 6100/10000]
+qusi [2026-05-21 02:17:23,035 INFO qusi.internal.train_session] loss: 0.133605  [ 7100/10000]
+qusi [2026-05-21 02:18:02,981 INFO qusi.internal.train_session] loss: 0.087774  [ 8100/10000]
+qusi [2026-05-21 02:18:42,713 INFO qusi.internal.train_session] loss: 0.144705  [ 9100/10000]
+qusi [2026-05-21 02:20:31,295 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.021749
+
+qusi [2026-05-21 02:20:31,360 INFO qusi.internal.train_session] Cycle 6
+qusi [2026-05-21 02:21:46,350 INFO qusi.internal.train_session] loss: 0.095404  [  100/10000]
+qusi [2026-05-21 02:26:23,902 INFO qusi.internal.train_session] loss: 0.099008  [ 1100/10000]
+qusi [2026-05-21 02:30:46,052 INFO qusi.internal.train_session] loss: 0.128063  [ 2100/10000]
+qusi [2026-05-21 02:33:18,653 INFO qusi.internal.train_session] loss: 0.105108  [ 3100/10000]
+qusi [2026-05-21 02:34:11,930 INFO qusi.internal.train_session] loss: 0.045519  [ 4100/10000]
+qusi [2026-05-21 02:34:55,186 INFO qusi.internal.train_session] loss: 0.149602  [ 5100/10000]
+qusi [2026-05-21 02:35:37,501 INFO qusi.internal.train_session] loss: 0.151080  [ 6100/10000]
+qusi [2026-05-21 02:36:15,623 INFO qusi.internal.train_session] loss: 0.174572  [ 7100/10000]
+qusi [2026-05-21 02:36:52,479 INFO qusi.internal.train_session] loss: 0.149979  [ 8100/10000]
+qusi [2026-05-21 02:37:28,442 INFO qusi.internal.train_session] loss: 0.084629  [ 9100/10000]
+qusi [2026-05-21 02:39:15,806 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.005584
+
+qusi [2026-05-21 02:39:15,882 INFO qusi.internal.train_session] Cycle 7
+qusi [2026-05-21 02:40:22,436 INFO qusi.internal.train_session] loss: 0.060495  [  100/10000]
+qusi [2026-05-21 02:44:44,286 INFO qusi.internal.train_session] loss: 0.126182  [ 1100/10000]
+qusi [2026-05-21 02:49:05,504 INFO qusi.internal.train_session] loss: 0.101202  [ 2100/10000]
+qusi [2026-05-21 02:52:04,342 INFO qusi.internal.train_session] loss: 0.083570  [ 3100/10000]
+qusi [2026-05-21 02:52:56,979 INFO qusi.internal.train_session] loss: 0.061424  [ 4100/10000]
+qusi [2026-05-21 02:53:38,705 INFO qusi.internal.train_session] loss: 0.108208  [ 5100/10000]
+qusi [2026-05-21 02:54:19,928 INFO qusi.internal.train_session] loss: 0.091297  [ 6100/10000]
+qusi [2026-05-21 02:55:01,943 INFO qusi.internal.train_session] loss: 0.176330  [ 7100/10000]
+qusi [2026-05-21 02:55:38,271 INFO qusi.internal.train_session] loss: 0.125866  [ 8100/10000]
+qusi [2026-05-21 02:56:13,777 INFO qusi.internal.train_session] loss: 0.086917  [ 9100/10000]
+qusi [2026-05-21 02:57:58,169 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.015041
+
+qusi [2026-05-21 02:57:58,220 INFO qusi.internal.train_session] Cycle 8
+qusi [2026-05-21 02:59:03,864 INFO qusi.internal.train_session] loss: 0.072104  [  100/10000]
+qusi [2026-05-21 03:03:28,766 INFO qusi.internal.train_session] loss: 0.048195  [ 1100/10000]
+qusi [2026-05-21 03:07:48,772 INFO qusi.internal.train_session] loss: 0.095558  [ 2100/10000]
+qusi [2026-05-21 03:10:29,148 INFO qusi.internal.train_session] loss: 0.150349  [ 3100/10000]
+qusi [2026-05-21 03:11:34,836 INFO qusi.internal.train_session] loss: 0.062239  [ 4100/10000]
+qusi [2026-05-21 03:12:19,093 INFO qusi.internal.train_session] loss: 0.091019  [ 5100/10000]
+qusi [2026-05-21 03:13:02,283 INFO qusi.internal.train_session] loss: 0.079251  [ 6100/10000]
+qusi [2026-05-21 03:13:45,079 INFO qusi.internal.train_session] loss: 0.063324  [ 7100/10000]
+qusi [2026-05-21 03:14:27,069 INFO qusi.internal.train_session] loss: 0.101385  [ 8100/10000]
+qusi [2026-05-21 03:15:03,919 INFO qusi.internal.train_session] loss: 0.133556  [ 9100/10000]
+qusi [2026-05-21 03:16:47,489 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.015145
+
+qusi [2026-05-21 03:16:47,543 INFO qusi.internal.train_session] Cycle 9
+qusi [2026-05-21 03:18:30,016 INFO qusi.internal.train_session] loss: 0.082572  [  100/10000]
+qusi [2026-05-21 03:22:51,695 INFO qusi.internal.train_session] loss: 0.110741  [ 1100/10000]
+qusi [2026-05-21 03:27:06,831 INFO qusi.internal.train_session] loss: 0.066843  [ 2100/10000]
+qusi [2026-05-21 03:29:33,199 INFO qusi.internal.train_session] loss: 0.061727  [ 3100/10000]
+qusi [2026-05-21 03:30:30,640 INFO qusi.internal.train_session] loss: 0.080867  [ 4100/10000]
+qusi [2026-05-21 03:31:16,806 INFO qusi.internal.train_session] loss: 0.083293  [ 5100/10000]
+qusi [2026-05-21 03:31:56,447 INFO qusi.internal.train_session] loss: 0.142914  [ 6100/10000]
+qusi [2026-05-21 03:32:35,485 INFO qusi.internal.train_session] loss: 0.021988  [ 7100/10000]
+qusi [2026-05-21 03:33:12,158 INFO qusi.internal.train_session] loss: 0.051269  [ 8100/10000]
+qusi [2026-05-21 03:33:50,645 INFO qusi.internal.train_session] loss: 0.061396  [ 9100/10000]
+qusi [2026-05-21 03:35:36,480 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.003747
+
+qusi [2026-05-21 03:35:36,534 INFO qusi.internal.train_session] Cycle 10
+qusi [2026-05-21 03:36:57,878 INFO qusi.internal.train_session] loss: 0.078718  [  100/10000]
+qusi [2026-05-21 03:41:16,554 INFO qusi.internal.train_session] loss: 0.101275  [ 1100/10000]
+qusi [2026-05-21 03:45:30,709 INFO qusi.internal.train_session] loss: 0.088893  [ 2100/10000]
+qusi [2026-05-21 03:48:30,156 INFO qusi.internal.train_session] loss: 0.035165  [ 3100/10000]
+qusi [2026-05-21 03:49:16,218 INFO qusi.internal.train_session] loss: 0.083008  [ 4100/10000]
+qusi [2026-05-21 03:49:57,853 INFO qusi.internal.train_session] loss: 0.060855  [ 5100/10000]
+qusi [2026-05-21 03:50:36,849 INFO qusi.internal.train_session] loss: 0.056044  [ 6100/10000]
+qusi [2026-05-21 03:51:15,789 INFO qusi.internal.train_session] loss: 0.032557  [ 7100/10000]
+qusi [2026-05-21 03:51:50,450 INFO qusi.internal.train_session] loss: 0.044347  [ 8100/10000]
+qusi [2026-05-21 03:52:27,281 INFO qusi.internal.train_session] loss: 0.075063  [ 9100/10000]
+qusi [2026-05-21 03:54:16,792 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.003347
+
+qusi [2026-05-21 03:54:16,844 INFO qusi.internal.train_session] Cycle 11
+qusi [2026-05-21 03:55:48,526 INFO qusi.internal.train_session] loss: 0.077737  [  100/10000]
+qusi [2026-05-21 04:00:06,192 INFO qusi.internal.train_session] loss: 0.037499  [ 1100/10000]
+qusi [2026-05-21 04:04:23,699 INFO qusi.internal.train_session] loss: 0.067676  [ 2100/10000]
+qusi [2026-05-21 04:07:05,880 INFO qusi.internal.train_session] loss: 0.084690  [ 3100/10000]
+qusi [2026-05-21 04:07:53,975 INFO qusi.internal.train_session] loss: 0.034816  [ 4100/10000]
+qusi [2026-05-21 04:08:32,396 INFO qusi.internal.train_session] loss: 0.041774  [ 5100/10000]
+qusi [2026-05-21 04:09:09,789 INFO qusi.internal.train_session] loss: 0.117181  [ 6100/10000]
+qusi [2026-05-21 04:09:44,575 INFO qusi.internal.train_session] loss: 0.097593  [ 7100/10000]
+qusi [2026-05-21 04:10:21,551 INFO qusi.internal.train_session] loss: 0.022081  [ 8100/10000]
+qusi [2026-05-21 04:10:59,495 INFO qusi.internal.train_session] loss: 0.114715  [ 9100/10000]
+qusi [2026-05-21 04:12:46,962 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.003067
+
+qusi [2026-05-21 04:12:47,015 INFO qusi.internal.train_session] Cycle 12
+qusi [2026-05-21 04:14:13,456 INFO qusi.internal.train_session] loss: 0.053128  [  100/10000]
+qusi [2026-05-21 04:18:51,702 INFO qusi.internal.train_session] loss: 0.068824  [ 1100/10000]
+qusi [2026-05-21 04:23:23,653 INFO qusi.internal.train_session] loss: 0.038918  [ 2100/10000]
+qusi [2026-05-21 04:26:35,071 INFO qusi.internal.train_session] loss: 0.070133  [ 3100/10000]
+qusi [2026-05-21 04:27:24,776 INFO qusi.internal.train_session] loss: 0.011035  [ 4100/10000]
+qusi [2026-05-21 04:28:06,480 INFO qusi.internal.train_session] loss: 0.093812  [ 5100/10000]
+qusi [2026-05-21 04:28:44,037 INFO qusi.internal.train_session] loss: 0.073462  [ 6100/10000]
+qusi [2026-05-21 04:29:25,369 INFO qusi.internal.train_session] loss: 0.023991  [ 7100/10000]
+qusi [2026-05-21 04:30:03,847 INFO qusi.internal.train_session] loss: 0.042834  [ 8100/10000]
+qusi [2026-05-21 04:30:42,703 INFO qusi.internal.train_session] loss: 0.016487  [ 9100/10000]
+qusi [2026-05-21 04:32:30,041 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.004248
+
+qusi [2026-05-21 04:32:30,092 INFO qusi.internal.train_session] Cycle 13
+qusi [2026-05-21 04:33:30,490 INFO qusi.internal.train_session] loss: 0.053500  [  100/10000]
+qusi [2026-05-21 04:38:18,356 INFO qusi.internal.train_session] loss: 0.035712  [ 1100/10000]
+qusi [2026-05-21 04:42:33,950 INFO qusi.internal.train_session] loss: 0.036078  [ 2100/10000]
+qusi [2026-05-21 04:45:14,988 INFO qusi.internal.train_session] loss: 0.117593  [ 3100/10000]
+qusi [2026-05-21 04:46:02,086 INFO qusi.internal.train_session] loss: 0.056775  [ 4100/10000]
+qusi [2026-05-21 04:46:41,647 INFO qusi.internal.train_session] loss: 0.056761  [ 5100/10000]
+qusi [2026-05-21 04:47:20,873 INFO qusi.internal.train_session] loss: 0.105912  [ 6100/10000]
+qusi [2026-05-21 04:47:57,549 INFO qusi.internal.train_session] loss: 0.028358  [ 7100/10000]
+qusi [2026-05-21 04:48:36,458 INFO qusi.internal.train_session] loss: 0.020809  [ 8100/10000]
+qusi [2026-05-21 04:49:14,243 INFO qusi.internal.train_session] loss: 0.054436  [ 9100/10000]
+qusi [2026-05-21 04:50:58,103 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.006738
+
+qusi [2026-05-21 04:50:58,153 INFO qusi.internal.train_session] Cycle 14
+qusi [2026-05-21 04:52:37,362 INFO qusi.internal.train_session] loss: 0.019566  [  100/10000]
+qusi [2026-05-21 04:56:58,288 INFO qusi.internal.train_session] loss: 0.020981  [ 1100/10000]
+qusi [2026-05-21 05:01:18,758 INFO qusi.internal.train_session] loss: 0.026490  [ 2100/10000]
+qusi [2026-05-21 05:03:53,313 INFO qusi.internal.train_session] loss: 0.033208  [ 3100/10000]
+qusi [2026-05-21 05:04:35,497 INFO qusi.internal.train_session] loss: 0.033214  [ 4100/10000]
+qusi [2026-05-21 05:05:17,454 INFO qusi.internal.train_session] loss: 0.056166  [ 5100/10000]
+qusi [2026-05-21 05:05:59,719 INFO qusi.internal.train_session] loss: 0.037165  [ 6100/10000]
+qusi [2026-05-21 05:06:37,877 INFO qusi.internal.train_session] loss: 0.047726  [ 7100/10000]
+qusi [2026-05-21 05:07:15,428 INFO qusi.internal.train_session] loss: 0.045510  [ 8100/10000]
+qusi [2026-05-21 05:07:54,101 INFO qusi.internal.train_session] loss: 0.039832  [ 9100/10000]
+qusi [2026-05-21 05:09:39,803 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.000944
+
+qusi [2026-05-21 05:09:39,855 INFO qusi.internal.train_session] Cycle 15
+qusi [2026-05-21 05:10:57,306 INFO qusi.internal.train_session] loss: 0.017723  [  100/10000]
+qusi [2026-05-21 05:15:19,751 INFO qusi.internal.train_session] loss: 0.070146  [ 1100/10000]
+qusi [2026-05-21 05:19:31,990 INFO qusi.internal.train_session] loss: 0.028661  [ 2100/10000]
+qusi [2026-05-21 05:22:20,506 INFO qusi.internal.train_session] loss: 0.012565  [ 3100/10000]
+qusi [2026-05-21 05:23:08,176 INFO qusi.internal.train_session] loss: 0.031256  [ 4100/10000]
+qusi [2026-05-21 05:23:51,272 INFO qusi.internal.train_session] loss: 0.102666  [ 5100/10000]
+qusi [2026-05-21 05:24:36,547 INFO qusi.internal.train_session] loss: 0.031882  [ 6100/10000]
+qusi [2026-05-21 05:25:14,007 INFO qusi.internal.train_session] loss: 0.017508  [ 7100/10000]
+qusi [2026-05-21 05:25:51,431 INFO qusi.internal.train_session] loss: 0.044547  [ 8100/10000]
+qusi [2026-05-21 05:26:27,568 INFO qusi.internal.train_session] loss: 0.021021  [ 9100/10000]
+qusi [2026-05-21 05:28:10,141 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.018977
+
+qusi [2026-05-21 05:28:10,195 INFO qusi.internal.train_session] Cycle 16
+qusi [2026-05-21 05:30:08,705 INFO qusi.internal.train_session] loss: 0.022933  [  100/10000]
+qusi [2026-05-21 05:34:29,180 INFO qusi.internal.train_session] loss: 0.012232  [ 1100/10000]
+qusi [2026-05-21 05:38:45,476 INFO qusi.internal.train_session] loss: 0.018231  [ 2100/10000]
+qusi [2026-05-21 05:41:11,123 INFO qusi.internal.train_session] loss: 0.004968  [ 3100/10000]
+qusi [2026-05-21 05:41:54,104 INFO qusi.internal.train_session] loss: 0.021048  [ 4100/10000]
+qusi [2026-05-21 05:42:36,361 INFO qusi.internal.train_session] loss: 0.036324  [ 5100/10000]
+qusi [2026-05-21 05:43:13,591 INFO qusi.internal.train_session] loss: 0.147706  [ 6100/10000]
+qusi [2026-05-21 05:43:48,576 INFO qusi.internal.train_session] loss: 0.117063  [ 7100/10000]
+qusi [2026-05-21 05:44:26,349 INFO qusi.internal.train_session] loss: 0.016102  [ 8100/10000]
+qusi [2026-05-21 05:45:02,906 INFO qusi.internal.train_session] loss: 0.006136  [ 9100/10000]
+qusi [2026-05-21 05:46:51,628 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.003615
+
+qusi [2026-05-21 05:46:51,677 INFO qusi.internal.train_session] Cycle 17
+qusi [2026-05-21 05:48:15,846 INFO qusi.internal.train_session] loss: 0.044948  [  100/10000]
+qusi [2026-05-21 05:52:36,161 INFO qusi.internal.train_session] loss: 0.032877  [ 1100/10000]
+qusi [2026-05-21 05:56:47,073 INFO qusi.internal.train_session] loss: 0.056177  [ 2100/10000]
+qusi [2026-05-21 05:59:33,741 INFO qusi.internal.train_session] loss: 0.061334  [ 3100/10000]
+qusi [2026-05-21 06:00:25,914 INFO qusi.internal.train_session] loss: 0.009340  [ 4100/10000]
+qusi [2026-05-21 06:01:09,008 INFO qusi.internal.train_session] loss: 0.038849  [ 5100/10000]
+qusi [2026-05-21 06:01:49,549 INFO qusi.internal.train_session] loss: 0.041254  [ 6100/10000]
+qusi [2026-05-21 06:02:29,288 INFO qusi.internal.train_session] loss: 0.017037  [ 7100/10000]
+qusi [2026-05-21 06:03:07,797 INFO qusi.internal.train_session] loss: 0.019951  [ 8100/10000]
+qusi [2026-05-21 06:03:43,811 INFO qusi.internal.train_session] loss: 0.021172  [ 9100/10000]
+qusi [2026-05-21 06:05:30,522 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.010788
+
+qusi [2026-05-21 06:05:30,573 INFO qusi.internal.train_session] Cycle 18
+qusi [2026-05-21 06:06:57,148 INFO qusi.internal.train_session] loss: 0.027658  [  100/10000]
+qusi [2026-05-21 06:11:17,575 INFO qusi.internal.train_session] loss: 0.031052  [ 1100/10000]
+qusi [2026-05-21 06:15:26,885 INFO qusi.internal.train_session] loss: 0.036482  [ 2100/10000]
+qusi [2026-05-21 06:18:23,559 INFO qusi.internal.train_session] loss: 0.043781  [ 3100/10000]
+qusi [2026-05-21 06:19:19,676 INFO qusi.internal.train_session] loss: 0.073130  [ 4100/10000]
+qusi [2026-05-21 06:20:02,804 INFO qusi.internal.train_session] loss: 0.016051  [ 5100/10000]
+qusi [2026-05-21 06:20:43,116 INFO qusi.internal.train_session] loss: 0.033382  [ 6100/10000]
+qusi [2026-05-21 06:21:20,276 INFO qusi.internal.train_session] loss: 0.011480  [ 7100/10000]
+qusi [2026-05-21 06:21:56,811 INFO qusi.internal.train_session] loss: 0.058149  [ 8100/10000]
+qusi [2026-05-21 06:22:32,135 INFO qusi.internal.train_session] loss: 0.003051  [ 9100/10000]
+qusi [2026-05-21 06:24:16,019 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.009850
+
+qusi [2026-05-21 06:24:16,068 INFO qusi.internal.train_session] Cycle 19
+qusi [2026-05-21 06:25:31,346 INFO qusi.internal.train_session] loss: 0.028574  [  100/10000]
+qusi [2026-05-21 06:29:49,820 INFO qusi.internal.train_session] loss: 0.027849  [ 1100/10000]
+qusi [2026-05-21 06:34:08,591 INFO qusi.internal.train_session] loss: 0.038794  [ 2100/10000]
+qusi [2026-05-21 06:37:11,948 INFO qusi.internal.train_session] loss: 0.050630  [ 3100/10000]
+qusi [2026-05-21 06:38:02,167 INFO qusi.internal.train_session] loss: 0.018496  [ 4100/10000]
+qusi [2026-05-21 06:38:38,049 INFO qusi.internal.train_session] loss: 0.037277  [ 5100/10000]
+qusi [2026-05-21 06:39:15,328 INFO qusi.internal.train_session] loss: 0.012768  [ 6100/10000]
+qusi [2026-05-21 06:39:52,720 INFO qusi.internal.train_session] loss: 0.065956  [ 7100/10000]
+qusi [2026-05-21 06:40:31,275 INFO qusi.internal.train_session] loss: 0.129101  [ 8100/10000]
+qusi [2026-05-21 06:41:08,076 INFO qusi.internal.train_session] loss: 0.020174  [ 9100/10000]
+qusi [2026-05-21 06:42:54,595 INFO qusi.internal.train_session] Validation Error:
+Avg loss: 0.000214

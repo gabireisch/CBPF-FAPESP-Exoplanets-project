@@ -5,7 +5,6 @@ from pathlib import Path
 import pandas as pd
 from lightkurve import search_lightcurve
 
-
 #configuracao de divisao dos dados
 RANDOM_SEED = 42
 TRAIN_PERCENT = 0.70
