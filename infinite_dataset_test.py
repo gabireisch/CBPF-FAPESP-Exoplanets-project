@@ -12,7 +12,7 @@ def main():
     model.load_state_dict(torch.load('sessions/old-force-1_latest_model.pt', map_location=device))
     metric_functions = [BinaryAccuracy(), BCELoss(), BinaryAUROC()]
     results = infinite_datasets_test_session(test_datasets=[test_light_curve_dataset], model=model,metric_functions=metric_functions, 
-        batch_size=2, device=device,steps=4)
+        batch_size=64, device=device,steps=5)
     return results
 
 if __name__ == '__main__':
