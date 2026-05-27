@@ -7,7 +7,7 @@ from dataset import get_transit_test_dataset
 
 def main():
     test_light_curve_dataset = get_transit_test_dataset()
-    model = Hadryss.new(input_length=2000)
+    model = Hadryss.new(input_length=1400)
     device = get_device()
     model.load_state_dict(torch.load('sessions/old-force-1_latest_model.pt', map_location=device))
     metric_functions = [BinaryAccuracy(), BCELoss(), BinaryAUROC()]

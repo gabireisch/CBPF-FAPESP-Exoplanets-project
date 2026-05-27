@@ -6,8 +6,8 @@ def main():
     train_light_curve_dataset = get_transit_train_dataset()
     validation_light_curve_dataset = get_transit_validation_dataset()
     
-    # entrada tamanho 2000
-    model = Hadryss.new(input_length=2000)
+    # entrada tamanho 1400
+    model = Hadryss.new(input_length= 1400)
     
     train_hyperparameter_configuration = TrainHyperparameterConfiguration.new(batch_size=64, cycles=50,  
     train_steps_per_cycle=25,       # 1594 fits / 64 = 24.9
