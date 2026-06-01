@@ -9,9 +9,9 @@ def main():
     # entrada tamanho 1400
     model = Hadryss.new(input_length= 1400)
     
-    train_hyperparameter_configuration = TrainHyperparameterConfiguration.new(batch_size=64, cycles=50,  
-    train_steps_per_cycle=25,       # 1594 fits / 64 = 24.9
-    validation_steps_per_cycle=6)   # 360 fits / 64 = 5.6)
+    train_hyperparameter_configuration = TrainHyperparameterConfiguration.new(batch_size=150, cycles=100,  
+    train_steps_per_cycle=60,       # 1594 fits / 64 = 24.9 
+    validation_steps_per_cycle=10)   # 360 fits / 64 = 5.6)
     
     train_session(train_datasets=[train_light_curve_dataset], validation_datasets=[validation_light_curve_dataset],
          model=model, hyperparameter_configuration=train_hyperparameter_configuration)
