@@ -41,7 +41,7 @@ def baixar_classe_multi_setor(csv_path, class_name):
                 if len(search_result) == 0:
                     continue
 
-                # O SEGREDO DO ORIENTADOR: Loop por TODOS os setores disponíveis!
+                # todos os setores disponiveis
                 for idx, item in enumerate(search_result):
                     try:
                         lc = item.download()
