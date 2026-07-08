@@ -7,8 +7,8 @@ def filtrar_tic_ids(csv_path):
     df = pd.read_csv(csv_path,sep=None,engine="python")
     df.columns = df.columns.str.strip()
 
-    tic_col = df.columns[1] # segunda coluna - TIC ID
-    disp_col = df.columns[2] #terceira coluna - caracterizacao 
+    tic_col = df.columns[2] # segunda coluna - TIC ID
+    disp_col = df.columns[3] #terceira coluna - caracterizacao 
 
     print(f"TIC column: {tic_col}")
     print(f"Disposition column: {disp_col}")
